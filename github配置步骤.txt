@@ -1,0 +1,59 @@
+步骤 1：本地代码 Git 初始化
+在终端或命令行中，进入你本地项目的根目录。
+cd /path/to/your/project
+
+
+1.	初始化 Git：
+如果你的项目还没有被 Git 版本控制，请初始化它：
+git init
+
+2.	检查文件状态：
+查看哪些文件未被追踪：
+git status
+
+3.	添加文件到 Git：
+将所有文件添加到 Git 的暂存区：
+git add .
+
+4.  配置用户
+git config --global user.email "hunlmy@hnu.edu.cn"
+git config --global user.name "HNULiMingyuan"
+
+5.	提交文件：
+提交所有添加的文件到 Git 仓库，并为此次提交添加描述：
+git commit -m "Initial commit"
+
+
+步骤 2：将本地代码连接到 GitHub 仓库
+1.	将 GitHub 仓库链接到本地项目：
+使用 git remote add 命令将远程仓库链接到本地代码。你可以在 GitHub 上的仓库页面找到仓库的 HTTPS 或 SSH URL（推荐 HTTPS）。
+git remote add origin https://github.com/HNULiMingyuan/Rarenode-Fuzz.git
+
+2.	验证远程仓库链接：
+确认远程仓库是否添加成功：
+git remote -v
+
+
+步骤 3：推送代码到 GitHub
+1.	推送本地代码到远程仓库：
+使用 git push 命令将你的代码推送到 GitHub。
+git push -u origin master
+
+2.	输入 GitHub 凭据：
+如果你使用 HTTPS 链接，你将需要输入你的 GitHub 用户名和密码（如果启用了两步验证，你需要输入访问令牌）。
+
+
+步骤 5：验证推送结果
+1.	查看 GitHub 仓库：
+在浏览器中打开你的 GitHub 仓库页面，刷新页面，你应该能够看到本地代码已经上传到 GitHub。
+
+
+步骤 6：日常操作
+1.	添加并提交代码变更：
+当你修改了项目中的文件后，你可以继续添加并提交更改：
+git add .
+git commit -m "Your commit message"
+
+2.	推送更新到 GitHub：
+每次有新的代码变动，你可以再次推送代码到 GitHub：
+git push origin master

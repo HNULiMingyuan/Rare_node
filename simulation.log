@@ -1,0 +1,10 @@
+Command: /home/limingyuan/detection-v1.0/s/c880/./simv -l simulation.log
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2_Full64; Runtime version N-2017.12-SP2_Full64;  Feb  8 18:51 2024
+$finish called from file "tb_c880.v", line 100.
+$finish at simulation time                20000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 20000 ps
+CPU Time:      0.420 seconds;       Data structure size:   0.1Mb
+Thu Feb  8 18:51:57 2024
